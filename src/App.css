@@ -1,8 +1,14 @@
 #root {
   height: 100vh;
+  font-family: sans-serif;
 }
 
 h1,
 p {
   margin: 0;
+}
+
+.ant-btn-primary {
+  background: #e29219 !important;
+  border-color: #e29219 !important;
 }
