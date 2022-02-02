@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Button: React.FC<ButtonProps> = ({ width, text, icon }) => {
   console.log(icon);
   return (
-    <CustomizedButton type="primary" size={"large"} icon={icon}>
+    <CustomizedButton type="primary" size="large" icon={icon}>
       {text}
     </CustomizedButton>
   );
