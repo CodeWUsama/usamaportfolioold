@@ -12,3 +12,17 @@ p {
   background: #e29219 !important;
   border-color: #e29219 !important;
 }
+
+.ant-input {
+  border-top: 0px !important;
+  border-left: 0px !important;
+  border-right: 0px !important;
+  border-color: #e29219 !important;
+}
+
+.ant-input:focus {
+  box-shadow: none !important;
+  outline: 0 !important;
+  outline-offset: 0px !important;
+  outline: none !important;
+}

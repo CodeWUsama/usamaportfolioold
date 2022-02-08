@@ -4,6 +4,7 @@ import "antd/dist/antd.css";
 import Skills from "routes/Skills";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "routes/About";
+import Contact from "routes/Contact";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );
