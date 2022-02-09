@@ -41,7 +41,7 @@ const Contact = () => {
           </Flex>
           <Flex
             id="rightBox"
-            width="45%"
+            width="30%"
             flexDirection="column"
             gap={23}
             justifyContent="center"
