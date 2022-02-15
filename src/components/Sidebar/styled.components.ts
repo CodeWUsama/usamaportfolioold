@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Colors } from "../../constants";
 
 export const Root = styled.div`
-  width: 130px;
+  min-width: 130px;
   height: 100%;
   display: flex;
   flex-direction: column;
