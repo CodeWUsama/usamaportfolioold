@@ -7,19 +7,34 @@ import About from "routes/About";
 import Contact from "routes/Contact";
 import Experiences from "routes/Experiences";
 import Services from "routes/Services";
+import { createContext, useEffect, useState } from "react";
+
+export const DataContext: any = createContext({});
 
 function App() {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  function handleResize() {
+    setWidth(window.innerWidth);
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+  });
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/experiences" element={<Experiences />} />
-        <Route path="/services" element={<Services />} />
-      </Routes>
-    </BrowserRouter>
+    <DataContext.Provider value={{ width }}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/experiences" element={<Experiences />} />
+          <Route path="/services" element={<Services />} />
+        </Routes>
+      </BrowserRouter>
+    </DataContext.Provider>
   );
 }
 

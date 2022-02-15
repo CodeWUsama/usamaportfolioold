@@ -25,3 +25,18 @@ export const OptionContainer = styled.div<OptionProps>`
 interface OptionProps {
   isActive?: boolean;
 }
+
+export const MobileNavBarContainer = styled.div`
+  width: 100%;
+  background-color: ${Colors.base};
+  padding: 20px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const MobileNavItemsContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+`;
