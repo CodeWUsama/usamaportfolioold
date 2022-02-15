@@ -1,7 +1,6 @@
 import { Flex, InvisibleText, Text } from "components/Global/styled.components";
 import Image from "components/Image";
 import Sidebar from "components/Sidebar";
-import { Colors } from "../../constants";
 
 const Services = () => {
   return (
