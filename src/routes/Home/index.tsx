@@ -8,21 +8,28 @@ import {
   MobileRoot,
   Root,
   UsamaImage,
+  UsamaImageFull,
+  UsamaImageTab,
 } from "./styled.component";
 import { Colors } from "../../constants";
 import Button from "../../components/Button";
 import ArrowRightOutlined from "@ant-design/icons/ArrowRightOutlined";
 import { useContext } from "react";
 import { DataContext } from "App";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const { width } = useContext(DataContext);
+  const navigate = useNavigate();
 
   return width >= 600 ? (
     <Root>
       <Sidebar />
       <BannersContainer>
         <BannerLeftCont>
+          <UsamaImageTab
+            src={process.env.PUBLIC_URL + "/Images/usama-cropped.png"}
+          />
           <Text fontSize={28} fontWeight={"bold"} capital color={Colors.base}>
             Web & Mobile App Developer
           </Text>
@@ -30,14 +37,18 @@ const Home = () => {
             I'm Usama <br /> Bilal
           </Text>
           <ButtonsContainer>
-            <Button text="More About Me" />
+            <Button text="More About Me" onClick={() => navigate("/about")} />
             <Button
               text="Hire Me"
               icon={<ArrowRightOutlined></ArrowRightOutlined>}
             />
           </ButtonsContainer>
         </BannerLeftCont>
-        <BannerRightCont />
+        <BannerRightCont>
+          <UsamaImageFull
+            src={process.env.PUBLIC_URL + "/Images/usama-cropped.png"}
+          />
+        </BannerRightCont>
       </BannersContainer>
     </Root>
   ) : (
@@ -67,7 +78,7 @@ const Home = () => {
         <Text fontSize={40} fontWeight="bold">
           Usama Bilal
         </Text>
-        <Button text="More About Me" />
+        <Button text="More About Me" onClick={() => navigate("/about")} />
         <Button
           text="Hire Me"
           icon={<ArrowRightOutlined></ArrowRightOutlined>}

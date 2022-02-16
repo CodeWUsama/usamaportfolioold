@@ -1,7 +1,7 @@
 import { Button as AButton } from "antd";
 import styled from "styled-components";
 
-const Button: React.FC<ButtonProps> = ({ width, text, icon }) => {
+const Button: React.FC<ButtonProps> = ({ width, text, icon, onClick }) => {
   console.log(icon);
   return (
     <CustomizedButton
@@ -10,6 +10,7 @@ const Button: React.FC<ButtonProps> = ({ width, text, icon }) => {
       type="primary"
       size="large"
       icon={icon}
+      onClick={onClick}
     >
       {text}
     </CustomizedButton>
@@ -30,6 +31,7 @@ interface ButtonProps {
   width?: string;
   text: string;
   icon?: React.ReactElement;
+  onClick?: () => void;
 }
 
 export default Button;
