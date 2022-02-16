@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Colors } from "../../constants";
 
 export const Root = styled.div`
   height: 100%;
