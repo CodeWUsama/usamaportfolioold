@@ -34,3 +34,13 @@ export const ButtonsContainer = styled.div`
   display: flex;
   gap: 30px;
 `;
+
+export const MobileRoot = styled.div`
+  height: 100%;
+`;
+
+export const UsamaImage = styled.img`
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+`;
