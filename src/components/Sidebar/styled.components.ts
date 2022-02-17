@@ -7,6 +7,7 @@ export const Root = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 768px;
 `;
 
 export const OptionContainer = styled.div<OptionProps>`

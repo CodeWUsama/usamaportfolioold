@@ -7,6 +7,9 @@ export const Text = styled.p<TextProps>`
   text-transform: ${(props) => (props.capital ? "uppercase" : "none")};
   margin: 0;
   text-align: ${(props) => props.textAlign};
+  @media (max-width: 600px) {
+    font-size: ${(props) => props.fontSizeMobile ?? props.fontSize ?? 18}px;
+  }
 `;
 
 export const Flex = styled.div<FlexProps>`
@@ -27,6 +30,7 @@ export const InvisibleText = styled.p`
 
 interface TextProps {
   fontSize?: number;
+  fontSizeMobile?: number;
   fontWeight?: any;
   color?: string;
   capital?: boolean;

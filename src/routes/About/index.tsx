@@ -1,13 +1,21 @@
 import { Flex, InvisibleText, Text } from "components/Global/styled.components";
 import Sidebar from "components/Sidebar";
 import { Colors } from "../../constants";
-import { StatBox } from "./styled.components";
+import {
+  AboutContentContainer,
+  ContentWrapper,
+  LeftContentContainer,
+  RightContentContainer,
+  RootContainer,
+  StatBox,
+  TextCenterContainer,
+} from "./styled.components";
 
 const About = () => {
   return (
-    <Flex height="100%" justifyContent="space-between">
+    <RootContainer>
       <Sidebar />
-      <Flex flexDirection="column" height="100%">
+      <ContentWrapper>
         <Flex
           id="header"
           justifyContent="center"
@@ -18,21 +26,26 @@ const About = () => {
             About
           </Text>
         </Flex>
-        <Flex
-          id="Content Container"
-          justifyContent="space-around"
-          height="100%"
-        >
-          <Flex
-            id="Stats container"
-            width="50%"
-            flexWrap="wrap"
-            justifyContent="space-between"
-            gap={30}
-            alignItems="center"
-            height="100%"
-            padding="5%"
-          >
+        <AboutContentContainer>
+          <LeftContentContainer>
+            <TextCenterContainer>
+              <Text color={Colors.base} fontSize={40} fontWeight="bold">
+                Web & Mobile App Developer Based in Pakistan
+              </Text>
+            </TextCenterContainer>
+            <Text fontSize={24} textAlign="justify" fontSizeMobile={18}>
+              A passionate software engineer who loves to code and create
+              wonders in computer science industry. I am graduated from Comsats
+              University Islamabad in Computer Science securing Gold Medal with
+              3.78 CGPA.
+            </Text>
+            <Text fontSize={24} textAlign="justify" fontSizeMobile={18}>
+              I am currently working as a Full Stack Web Developer in Pakistan
+              Airforce. I am honoured to serve my country through my coding
+              skills.
+            </Text>
+          </LeftContentContainer>
+          <RightContentContainer>
             <StatBox backgroundColor="#0DC340">
               <Text color="white" fontSize={30} fontWeight="bold">
                 50+
@@ -61,38 +74,15 @@ const About = () => {
               <Text color="white" fontSize={30} fontWeight="bold">
                 2+
               </Text>
-              <Text color="white" fontSize={20}>
+              <Text color="white" fontSize={20} textAlign="center">
                 Years of Experience
               </Text>
             </StatBox>
-          </Flex>
-          <Flex
-            id="Content"
-            width="50%"
-            height="100%"
-            flexDirection="column"
-            justifyContent="center"
-            gap={20}
-          >
-            <Text color={Colors.base} fontSize={40} fontWeight="bold">
-              Web & Mobile App Developer Based in Pakistan
-            </Text>
-            <Text fontSize={24} textAlign="justify">
-              A passionate software engineer who loves to code and create
-              wonders in computer science industry. I am graduated from Comsats
-              University Islamabad in Computer Science securing Gold Medal with
-              3.78 CGPA.
-            </Text>
-            <Text fontSize={24} textAlign="justify">
-              I am currently working as a Full Stack Web Developer in Pakistan
-              Airforce. I am honoured to serve my country through my coding
-              skills.
-            </Text>
-          </Flex>
-        </Flex>
-      </Flex>
-      <InvisibleText>Usama is my name</InvisibleText>
-    </Flex>
+          </RightContentContainer>
+        </AboutContentContainer>
+      </ContentWrapper>
+      <InvisibleText>usama</InvisibleText>
+    </RootContainer>
   );
 };
 
