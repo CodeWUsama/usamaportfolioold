@@ -33,13 +33,13 @@ const About = () => {
                 Web & Mobile App Developer Based in Pakistan
               </Text>
             </TextCenterContainer>
-            <Text fontSize={24} textAlign="justify" fontSizeMobile={18}>
+            <Text fontSize={24} textAlign="justify" fontSizeMobile={20}>
               A passionate software engineer who loves to code and create
               wonders in computer science industry. I am graduated from Comsats
               University Islamabad in Computer Science securing Gold Medal with
               3.78 CGPA.
             </Text>
-            <Text fontSize={24} textAlign="justify" fontSizeMobile={18}>
+            <Text fontSize={24} textAlign="justify" fontSizeMobile={20}>
               I am currently working as a Full Stack Web Developer in Pakistan
               Airforce. I am honoured to serve my country through my coding
               skills.
