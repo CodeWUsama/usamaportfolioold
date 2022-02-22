@@ -1,32 +1,38 @@
 import Button from "components/Button";
 import { Flex, InvisibleText, Text } from "components/Global/styled.components";
 import Sidebar from "components/Sidebar";
-import { GreyBubble, YellowBubble } from "./styled.components";
+import {
+  CenterPageContainer,
+  ContentWrapper,
+  GreyBubble,
+  RootContainer,
+  YellowBubble,
+} from "./styled.components";
 import CloudDownloadOutlined from "@ant-design/icons/CloudDownloadOutlined";
 
 const Skills = () => {
   return (
-    <>
-      <Flex height="100%" justifyContent="space-between">
-        <Sidebar />
-        <Flex flexDirection="column" height="100%" id="Content">
+    <RootContainer>
+      <Sidebar />
+      <ContentWrapper>
+        <Flex
+          id="header"
+          justifyContent="center"
+          alignItems="center"
+          style={{ marginTop: 26 }}
+        >
+          <Text fontSize={45} fontWeight={"bold"} capital>
+            Skills
+          </Text>
+        </Flex>
+        <CenterPageContainer id="fucking">
           <Flex
-            id="header"
-            justifyContent="center"
-            alignItems="center"
-            style={{ marginTop: 26 }}
+            justifyContent="space-around"
+            flexWrap="wrap"
+            gap={20}
+            style={{ margin: "0px 10px" }}
           >
-            <Text fontSize={45} fontWeight={"bold"} capital>
-              Skills
-            </Text>
-          </Flex>
-          <Flex height="80%" justifyContent="space-around">
-            <Flex
-              width="max-content"
-              flexDirection="column"
-              height="100%"
-              justifyContent="space-around"
-            >
+            <Flex width="max-content" flexDirection="column" gap={60}>
               <Flex flexDirection="column" alignItems="center">
                 <Text
                   fontSize={26}
@@ -122,12 +128,7 @@ const Skills = () => {
                 </Flex>
               </Flex>
             </Flex>
-            <Flex
-              width="max-content"
-              flexDirection="column"
-              height="100%"
-              justifyContent="space-around"
-            >
+            <Flex width="max-content" flexDirection="column" gap={60}>
               <Flex flexDirection="column" alignItems="center">
                 <Text
                   fontSize={26}
@@ -251,10 +252,10 @@ const Skills = () => {
           <Flex justifyContent="center">
             <Button text="Download Resume" icon={<CloudDownloadOutlined />} />
           </Flex>
-        </Flex>
-        <InvisibleText>Usama is my name</InvisibleText>
-      </Flex>
-    </>
+        </CenterPageContainer>
+      </ContentWrapper>
+      <InvisibleText>Usama is my name</InvisibleText>
+    </RootContainer>
   );
 };
 

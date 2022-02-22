@@ -20,6 +20,8 @@ export const Flex = styled.div<FlexProps>`
   align-items: ${(props) => props.alignItems ?? "flex-start"};
   width: ${(props) => props.width ?? "100%"};
   height: ${(props) => props.height};
+  min-height: ${(props) => props.minHeight};
+  max-height: ${(props) => props.maxHeight};
   flex-wrap: ${(props) => props.flexWrap};
   padding: ${(props) => props.padding};
 `;
@@ -46,4 +48,6 @@ interface FlexProps {
   width?: string;
   flexWrap?: string;
   padding?: string;
+  minHeight?: string;
+  maxHeight?: string;
 }
