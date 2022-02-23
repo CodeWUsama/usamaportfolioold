@@ -2,7 +2,7 @@ import "./App.css";
 import Home from "./routes/Home";
 import "antd/dist/antd.css";
 import Skills from "routes/Skills";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter as BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "routes/About";
 import Contact from "routes/Contact";
 import Experiences from "routes/Experiences";
