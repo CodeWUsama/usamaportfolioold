@@ -1,10 +1,17 @@
 import { Flex, InvisibleText, Text } from "components/Global/styled.components";
 import Image from "components/Image";
 import Sidebar from "components/Sidebar";
+import {
+  Column,
+  ContentContainer,
+  RootContainer,
+  ServiceContainer,
+  ServiceDescription,
+} from "./styled.components";
 
 const Services = () => {
   return (
-    <Flex height="100%" justifyContent="space-between">
+    <RootContainer>
       <Sidebar />
       <Flex flexDirection="column" height="100%">
         <Flex
@@ -17,13 +24,8 @@ const Services = () => {
             Services
           </Text>
         </Flex>
-        <Flex
-          id="content"
-          height="100%"
-          justifyContent="space-around"
-          alignItems="center"
-        >
-          <Flex id="left" width="45%" flexDirection="column" gap={60}>
+        <ContentContainer>
+          <Column>
             <ServiceCard
               title="Web Development"
               description="If you are looking for a complete website including frontend, backend, database and deployment in modern technologies then i am a perfect guy for you. "
@@ -39,8 +41,8 @@ const Services = () => {
               description="If you are looking for a guy who can develop a web app as well as mobile app for your idea using emerging technologies, you can give me shot."
               icon="/Icons/app-development.png"
             />
-          </Flex>
-          <Flex id="rightCont" width="45%" flexDirection="column" gap={60}>
+          </Column>
+          <Column>
             <ServiceCard
               title="Mobile App Development"
               description="Need to convert your idea into full stack mobile application that runs on multiple operating systems like Android, IOS? I can make it possible."
@@ -56,11 +58,11 @@ const Services = () => {
               description="I am constantly learning new skills and technologies so i can serve the IT industry and be a better Computer Science professional"
               icon="/Icons/web.png"
             />
-          </Flex>
-        </Flex>
+          </Column>
+        </ContentContainer>
       </Flex>
       <InvisibleText>Usama is my name</InvisibleText>
-    </Flex>
+    </RootContainer>
   );
 };
 
@@ -72,17 +74,17 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   description,
 }) => {
   return (
-    <Flex width="max-content" gap={30} alignItems="center">
+    <ServiceContainer>
       <Flex width="max-content">
         <Image src={icon} height={50} width={50} />
       </Flex>
-      <Flex width="450px" flexDirection="column" gap={10}>
+      <ServiceDescription>
         <Text fontSize={28} fontWeight="bold">
           {title}
         </Text>
         <Text textAlign="justify">{description}</Text>
-      </Flex>
-    </Flex>
+      </ServiceDescription>
+    </ServiceContainer>
   );
 };
 

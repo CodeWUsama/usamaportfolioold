@@ -2,7 +2,6 @@ import { Button as AButton } from "antd";
 import styled from "styled-components";
 
 const Button: React.FC<ButtonProps> = ({ width, text, icon, onClick }) => {
-  console.log(icon);
   return (
     <CustomizedButton
       width={width}

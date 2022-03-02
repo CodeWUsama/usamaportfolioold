@@ -61,11 +61,12 @@ const Option: React.FC<OptionProps> = ({ text, path, isActive }) => {
   let navigateTo = text.toLocaleLowerCase();
   if (text === "Home") navigateTo = "";
 
-  let url = window.location.pathname;
+  let url = window.location.href;
+  let urlEnd = url.split("/");
 
   return (
     <OptionContainer
-      isActive={url.substring(1, url.length) === navigateTo}
+      isActive={urlEnd[urlEnd.length - 1] === navigateTo}
       onClick={() => navigate("/" + navigateTo)}
     >
       <Image src={path} height={50} width={50} />
