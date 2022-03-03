@@ -1,11 +1,16 @@
 import { Flex, InvisibleText, Text } from "components/Global/styled.components";
 import Sidebar from "components/Sidebar";
 import { Colors } from "../../constants";
-import { Circle, VerticalBar } from "./styled.components";
+import {
+  Circle,
+  ContentContainer,
+  RootContainer,
+  VerticalBar,
+} from "./styled.components";
 
 const Experiences = () => {
   return (
-    <Flex height="100%" justifyContent="space-between">
+    <RootContainer>
       <Sidebar />
       <Flex flexDirection="column" height="100%">
         <Flex
@@ -18,12 +23,7 @@ const Experiences = () => {
             Experiences
           </Text>
         </Flex>
-        <Flex
-          id="content"
-          height="100%"
-          justifyContent="space-around"
-          alignItems="center"
-        >
+        <ContentContainer>
           <Flex
             id="leftCont"
             width="40%"
@@ -150,10 +150,10 @@ const Experiences = () => {
               </Flex>
             </Flex>
           </Flex>
-        </Flex>
+        </ContentContainer>
       </Flex>
       <InvisibleText>Usama is my name</InvisibleText>
-    </Flex>
+    </RootContainer>
   );
 };
 

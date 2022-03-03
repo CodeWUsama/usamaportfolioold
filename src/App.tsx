@@ -8,6 +8,7 @@ import Contact from "routes/Contact";
 import Experiences from "routes/Experiences";
 import Services from "routes/Services";
 import { createContext, useEffect, useState } from "react";
+import Projects from "routes/Projects";
 
 export const DataContext: any = createContext({});
 
@@ -32,6 +33,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/experiences" element={<Experiences />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </BrowserRouter>
     </DataContext.Provider>
