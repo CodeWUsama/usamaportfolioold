@@ -23,10 +23,7 @@ const Projects = () => {
           Projects
         </Text>
         <ContentContainer>
-          <Carousel
-            autoplay
-            style={{ maxWidth: "800px", minWidth: "100px", width: 300 }}
-          >
+          <Carousel autoplay style={{ width: "inherit" }}>
             <div>
               <h3 style={contentStyle}>1</h3>
             </div>
@@ -40,6 +37,7 @@ const Projects = () => {
               <h3 style={contentStyle}>4</h3>
             </div>
           </Carousel>
+          {/* <h1>Usama</h1> */}
         </ContentContainer>
       </ContentWrapper>
       <InvisibleText>usama is my name</InvisibleText>
