@@ -9,6 +9,7 @@ import Experiences from "routes/Experiences";
 import Services from "routes/Services";
 import { createContext, useEffect, useState } from "react";
 import Projects from "routes/Projects";
+import "react-multi-carousel/lib/styles.css";
 
 export const DataContext: any = createContext({});
 
