@@ -84,7 +84,7 @@ const Projects = () => {
           >
             <ProjectContainer>
               <img
-                src="https://images.unsplash.com/photo-1549396535-c11d5c55b9df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                src="Images/workspace.png"
                 alt="loading.."
                 style={{
                   display: "block",
@@ -111,7 +111,7 @@ const Projects = () => {
             </ProjectContainer>
             <ProjectContainer>
               <img
-                src="https://images.unsplash.com/photo-1549396535-c11d5c55b9df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                src="/Images/website-creator.png"
                 alt="loading.."
                 style={{
                   display: "block",
@@ -121,21 +121,24 @@ const Projects = () => {
                 }}
               />
               <ProjectDescriptionContainer>
-                <h1>SPIED</h1>
-                <p>
-                  Lorem ipsum dolor sit amet. Rem alias dolore ab doloremque
-                  galisum est quas dolorum cum numquam modi At molestiae maxime
-                  qui veritatis eaque. Id sunt eligendi et dolorum placeat sit
-                  maiores sint? Sit dolorem quam ut minima explicabo est sunt
-                  illum. Ea exercitationem voluptatum non doloribus illum est
-                  autem explicabo sed dicta eaque in cupiditate consectetur et
-                  laborum officiis rem possimus quas? Et laborum velit et beatae
-                  tenetur qui veritatis officiis est voluptatibus autem. Et
-                  dolores harum qui tempore illum ab quas ipsum est corrupti
-                  nihil. Est animi dolor et esse dolore et dolorum ratione quo
-                  doloribus consequatur aut exercitationem sint et voluptatem
-                  sapiente.
-                </p>
+                <Text fontSize={20} fontWeight="bold" color={Colors.base}>
+                  Website Creator Using Presets
+                </Text>
+                <Text textAlign="justify" fontSize={14}>
+                  We developed a system where user can search through multiple
+                  categories. After selecting the desired category, he is
+                  provided with presets or templates related to that category
+                  having the basic functions. For customizing, user can edit the
+                  text, upload the banners/images, modify the styles of the
+                  elements, remove the unnecessary components and add things
+                  like products, services and research depending up the
+                  category. Moreover, he can also use our subdomains to publish
+                  his website on the live server. Unlike other systems he
+                  doesn’t has to hire a professional instead he can manage
+                  everything on his own because of easy interface. Our main
+                  target was the layman audience with no professional knowledge
+                  of IT.
+                </Text>
               </ProjectDescriptionContainer>
             </ProjectContainer>
             <ProjectContainer>
@@ -150,7 +153,7 @@ const Projects = () => {
                 }}
               />
               <ProjectDescriptionContainer>
-                <h1>SPIED</h1>
+                <h1>Test Project</h1>
                 <p>
                   Lorem ipsum dolor sit amet. Rem alias dolore ab doloremque
                   galisum est quas dolorum cum numquam modi At molestiae maxime
