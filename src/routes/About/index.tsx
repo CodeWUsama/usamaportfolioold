@@ -40,9 +40,9 @@ const About = () => {
               3.78 CGPA.
             </Text>
             <Text fontSize={24} textAlign="justify" fontSizeMobile={20}>
-              I am currently working as a Full Stack Web Developer in Pakistan
-              Airforce. I am honoured to serve my country through my coding
-              skills.
+              I am currently working as a Frontend Engineer in Devsinc. Devsinc
+              is a US based multinational company having thousands of clients
+              all around the globe.
             </Text>
           </LeftContentContainer>
           <RightContentContainer>
