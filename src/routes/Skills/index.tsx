@@ -219,6 +219,14 @@ const Skills = () => {
                   alignItems="center"
                   justifyContent="space-between"
                 >
+                  <Text fontSize={20}>Docker</Text>
+                  <Bubbles filled={5} />
+                </Flex>
+                <Flex
+                  gap={20}
+                  alignItems="center"
+                  justifyContent="space-between"
+                >
                   <Text fontSize={20}>Github</Text>
                   <Bubbles filled={5} />
                 </Flex>
@@ -236,14 +244,6 @@ const Skills = () => {
                   justifyContent="space-between"
                 >
                   <Text fontSize={20}>JIRA</Text>
-                  <Bubbles filled={5} />
-                </Flex>
-                <Flex
-                  gap={20}
-                  alignItems="center"
-                  justifyContent="space-between"
-                >
-                  <Text fontSize={20}>Office Tools</Text>
                   <Bubbles filled={5} />
                 </Flex>
               </Flex>
