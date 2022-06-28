@@ -143,7 +143,7 @@ const Projects = () => {
             </ProjectContainer>
             <ProjectContainer>
               <img
-                src="https://images.unsplash.com/photo-1549396535-c11d5c55b9df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                src="/Images/website-creator.png"
                 alt="loading.."
                 style={{
                   display: "block",
@@ -153,21 +153,25 @@ const Projects = () => {
                 }}
               />
               <ProjectDescriptionContainer>
-                <h1>Test Project</h1>
-                <p>
-                  Lorem ipsum dolor sit amet. Rem alias dolore ab doloremque
-                  galisum est quas dolorum cum numquam modi At molestiae maxime
-                  qui veritatis eaque. Id sunt eligendi et dolorum placeat sit
-                  maiores sint? Sit dolorem quam ut minima explicabo est sunt
-                  illum. Ea exercitationem voluptatum non doloribus illum est
-                  autem explicabo sed dicta eaque in cupiditate consectetur et
-                  laborum officiis rem possimus quas? Et laborum velit et beatae
-                  tenetur qui veritatis officiis est voluptatibus autem. Et
-                  dolores harum qui tempore illum ab quas ipsum est corrupti
-                  nihil. Est animi dolor et esse dolore et dolorum ratione quo
-                  doloribus consequatur aut exercitationem sint et voluptatem
-                  sapiente.
-                </p>
+                <Text fontSize={20} fontWeight="bold" color={Colors.base}>
+                  Digital Wallet
+                </Text>
+                <Text textAlign="justify" fontSize={14}>
+                  Digital Wallet is a cross platform mobile application which
+                  revolutionize the idea of wallet management. This application
+                  is designed in such a way that any layman having mobile phone
+                  can shift its daily physical wallet tasks to digital wallet.
+                  User can add the income or expense records into the wallet
+                  through which digital wallet maintains the cash. User can see
+                  the income/expense history, edit or delete them. User can also
+                  view multiple statistics calculated based upon the records
+                  such as total cash spent in a week, cash spent in a month.
+                  These statistics are also visually presented in form of graphs
+                  for better understanding of user. Main idea behind the
+                  application is to make the wallet managment easy and more
+                  optimized. This application is being developed using React
+                  Native, TypeScript, Node JS & MongoDB Atlas.
+                </Text>
               </ProjectDescriptionContainer>
             </ProjectContainer>
           </Carousel>

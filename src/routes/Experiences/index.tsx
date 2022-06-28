@@ -39,9 +39,9 @@ const Experiences = () => {
                 flexDirection="column"
                 justifyContent="space-around"
               >
-                <Text>Oct 2021 - Present</Text>
-                <Text>Feb 2019 - Present</Text>
-                <Text>June 2021 - Sep 2021</Text>
+                <Text>June 2022 - Present</Text>
+                <Text>Oct 2021 - May 2022</Text>
+                <Text>July 2021 - Sept 2021</Text>
               </Flex>
               <VerticalBar>
                 <Circle />
@@ -63,6 +63,13 @@ const Experiences = () => {
                   Working Experiences
                 </Text>
                 <Flex width="300px" flexDirection="column">
+                  <Text fontWeight="bold">Devsinc</Text>
+                  <Text textAlign="justify">
+                    Working as a React JS developer in US based multi-national
+                    company Developers Incorporated.
+                  </Text>
+                </Flex>
+                <Flex width="300px" flexDirection="column">
                   <Text fontWeight="bold">Pakistan Airforce</Text>
                   <Text textAlign="justify">
                     Working as a full stack developer (MERN) in Pakistan
@@ -76,13 +83,6 @@ const Experiences = () => {
                     Worked as a React JS developer in one of Pakistan’s top
                     software firm. I got so much to learn while working under
                     top IT professionals.
-                  </Text>
-                </Flex>
-                <Flex width="300px" flexDirection="column">
-                  <Text fontWeight="bold">Freelance Web Developer</Text>
-                  <Text textAlign="justify">
-                    Offering web development services using React and Nodejs on
-                    Fiverr.
                   </Text>
                 </Flex>
               </Flex>
